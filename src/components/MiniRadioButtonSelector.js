@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-
+import '../App.css';
 class MiniRadioButtonSelector extends Component {
   render() {
     return (
-      <div > 25% </div>
+      <div className="MiniRadioButtonSelector"> 25% </div>
     );
   }
 }
