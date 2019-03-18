@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import BuySellBlock from './BuySellBlock';
-
+import '../App.css';
 class BuySellSection extends Component {
   render() {
     return (
-      <div> Hello World 
-      <BuySellBlock> </BuySellBlock>
-      <BuySellBlock> </BuySellBlock>
+      <div> 
+      <div>Buy Sell Section</div>
+      <div className="BuySellBlocks">
+      <BuySellBlock className="BuySellBlock"> </BuySellBlock>
+      <BuySellBlock className="BuySellBlock"> </BuySellBlock>
+      </div>
+      
       </div>
     );
   }
