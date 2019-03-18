@@ -5,6 +5,7 @@ import ButtonOrderSubmit from './ButtonOrderSubmit';
 import '../App.css';
 class BuySellBlock extends Component {
   render() {
+    
     return (
       <div className="BuySellBlock">
       <div className="BuySellHeadingText"> Buy PLKX </div>
@@ -17,7 +18,7 @@ class BuySellBlock extends Component {
       <MiniRadioButtonSelector></MiniRadioButtonSelector>
       </div>
       <div>Total: 200 ETH</div>
-      <ButtonOrderSubmit></ButtonOrderSubmit>
+      <ButtonOrderSubmit ></ButtonOrderSubmit>
       </div>
     );
   }

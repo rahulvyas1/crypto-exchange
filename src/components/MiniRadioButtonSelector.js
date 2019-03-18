@@ -3,7 +3,12 @@ import '../App.css';
 class MiniRadioButtonSelector extends Component {
   render() {
     return (
-      <div className="MiniRadioButtonSelector"> 25% </div>
+      <div className="MiniRadioButtonSelector">
+      <form>
+        <button>
+        25% 
+        </button>
+      </form></div>
     );
   }
 }

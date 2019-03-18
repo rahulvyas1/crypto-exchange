@@ -22,7 +22,7 @@
 
 .BuySellBlock{
     flex: 1; 
-    background: tomato;
+    background: #212529;
     padding: 20px;
     margin-top: 10px;
     color: white;
@@ -32,14 +32,17 @@
 }
 
 .SubmitOrderButton{
-    background: white;
-    padding: 5px;
     width: 100%;
-    color: black;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.2em;
-    border: solid;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    height: 36px;
+    cursor: pointer;
+    outline: 0;
+    border-radius: 3px;
+    border-color: #178b30;
+    background: #178b30;
 }
 
 .RadioButtonSelectorArea{
@@ -54,4 +57,9 @@
 .InputOrderBoxField{
     width: 100%;
     line-height: 5em;
+}
+
+.body{
+    -webkit-font-smoothing: antialiased;
+    background-color: #101010;
 }

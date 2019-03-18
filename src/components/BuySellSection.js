@@ -7,8 +7,8 @@ class BuySellSection extends Component {
       <div> 
       <div>Buy Sell Section</div>
       <div className="BuySellBlocks">
-      <BuySellBlock> </BuySellBlock>
-      <BuySellBlock> </BuySellBlock>
+      <BuySellBlock > </BuySellBlock>
+      <BuySellBlock > </BuySellBlock>
       </div>
       
       </div>
