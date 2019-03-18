@@ -11,6 +11,7 @@
     align-items: stretch;
     -webkit-flex-flow: row wrap;
     justify-content: space-around;
+    flex-direction: row;
     
 }
 
@@ -76,6 +77,8 @@
 }
 
 .body{
+    display: flex;
+    flex-direction: column;
     -webkit-font-smoothing: antialiased;
     background-color: #101010;
     font-size: 0.6vw;
@@ -95,12 +98,11 @@
     flex-direction: row;
     color: azure;
     justify-content: space-between;
-    height: 30px;
+    height: 32px;
 }
 
 .NavbarPart{
    flex:1;
-   background-color: aqua;
 }
 .NavbarPart.Right{
     background-color: #858e9f;
@@ -116,9 +118,51 @@
 }
 
 .NavbarItem{
-    padding: 0 20px;
+    padding: 10px;
 }
 
 .Logo{
     width: 28px;
+    fill: white;
+    padding: 0 10px;
 }
+
+.SubmitButton form button{
+    width: auto;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    cursor: pointer;
+    outline: 0;
+
+    border-radius: 3px;
+    background-color: #0dc3f9;
+    border: 2px solid #0dc3f9;
+    padding: 6px 12px;
+    margin: 0 3px;
+}
+
+.ContainerMain{
+    display: flex;
+    flex-direction: row;
+}
+.Container{
+    flex: 2;
+    justify-content: space-between;
+}
+
+.OrdersSection{
+    height: 100%;
+    background-color: brown;
+}
+
+.Charts{
+    height: 100%;
+    background-color: blue;
+}   
+
+.MyOrders{
+    height: 100%;
+    background-color: rebeccapurple;
+} 

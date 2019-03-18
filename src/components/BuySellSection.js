@@ -5,7 +5,6 @@ class BuySellSection extends Component {
   render() {
     return (
       <div> 
-      <div>Buy Sell Section</div>
       <div className="BuySellBlocks">
       <BuySellBlock > </BuySellBlock>
       <BuySellBlock > </BuySellBlock>
