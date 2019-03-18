@@ -74,6 +74,8 @@
 .InputOrderBoxField{
     width: 100%;
     line-height: 5em;
+    background-color: #232A38;
+    border-radius: 3px;
 }
 
 .body{
@@ -148,13 +150,15 @@
     flex-direction: row;
 }
 .Container{
-    flex: 2;
+    flex: 1;
     justify-content: space-between;
 }
+
 
 .OrdersSection{
     height: 100%;
     background-color: brown;
+    
 }
 
 .Charts{
