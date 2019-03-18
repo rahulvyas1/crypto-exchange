@@ -47,11 +47,27 @@
 
 .RadioButtonSelectorArea{
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+
+
 }
 .MiniRadioButtonSelector{
-    flex-basis: 100%;
-    text-align: center;
-    border: 1px solid black;
+   
+    flex:1;
+    flex-grow: 1;
+    padding: 0;
+    
+    border: 1px solid #263043;
+    background: transparent;
+    border-radius: 3px;
+    font-size: 0.4vw;
+    font-weight: 500;
+    color: #858e9f;
+    cursor: pointer;
+    
+    
 }
 
 .InputOrderBoxField{
@@ -62,4 +78,47 @@
 .body{
     -webkit-font-smoothing: antialiased;
     background-color: #101010;
+    font-size: 0.6vw;
+}
+
+
+.MiniRadioButtonSelector form button{
+ width: 100%;
+ flex-grow: 1;
+ padding: 20px;
+ 
+ 
+}
+
+.Navbar{
+    display: flex;
+    flex-direction: row;
+    color: azure;
+    justify-content: space-between;
+    height: 30px;
+}
+
+.NavbarPart{
+   flex:1;
+   background-color: aqua;
+}
+.NavbarPart.Right{
+    background-color: #858e9f;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.NavbarPart.Left{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.NavbarItem{
+    padding: 0 20px;
+}
+
+.Logo{
+    width: 28px;
 }

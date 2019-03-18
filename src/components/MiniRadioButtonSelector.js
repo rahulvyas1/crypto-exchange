@@ -5,7 +5,7 @@ class MiniRadioButtonSelector extends Component {
     return (
       <div className="MiniRadioButtonSelector">
       <form>
-        <button>
+        <button >
         25% 
         </button>
       </form></div>
