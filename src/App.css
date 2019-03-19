@@ -157,16 +157,59 @@
 
 .OrdersSection{
     height: 100%;
-    background-color: brown;
+    background-color:#141721;
+    display: flex;
     
 }
 
 .Charts{
     height: 100%;
-    background-color: blue;
 }   
 
 .MyOrders{
     height: 100%;
-    background-color: rebeccapurple;
+    background-color:#0e1018;
 } 
+
+.OrderBook{
+    color: #ffffff;
+    width: 100%;
+    font-size: 1.8em;
+    font-weight: 300;
+    padding: 20px;
+    border: 1px solid #0e1018;
+}
+
+.OrderBook ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    overflow:hidden; 
+    overflow-y:scroll;
+}
+ 
+.OrderBook ul li{
+    background-color: #263043;
+    display: flex;
+    justify-content: flex-end;
+    padding: 2px;
+    font-size: 0.7em;
+    font-weight: 700;
+}
+
+.OrderBook ul li div{
+    padding: 5px;
+    flex: 1;
+}
+
+.ListHeader div{
+    float: left;
+    width: 33.33%;
+}
+
+.ListHeader:after{
+    content: "";
+    display: table;
+    clear: both;
+}
