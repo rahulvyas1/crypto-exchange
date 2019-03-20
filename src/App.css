@@ -170,7 +170,7 @@
     align-items: stretch;
 }
 .Container Top{
-    height: 58%;
+    height: 58px;
     
 }
 
@@ -196,12 +196,12 @@
 } 
 
 .OrderBook{
-    color: #ffffff;
     width: 100%;
-    font-size: 12px;
-    font-weight: 300;
     padding: 0px;
     border: 1px solid #0e1018;
+    color: #8d96a6;
+    font-size: 11px;
+    font-weight: 700;
 }
 
 .OrderBook ul{
@@ -209,14 +209,14 @@
     background-color: #0dc3f9;
     padding: 0; /* To remove default left padding */
     width: 100%;
-    overflow-y: scroll;
-    position:relative;
-    height: 300px;
+
+    margin: 0;
 }
 
 .OrderBookLi{
     background-color: #263043;
     margin: 0;
+    height: 15px;
     
 }
 
@@ -249,7 +249,8 @@
 
 
 .BlockTitle{
-
+    align-content: center;
+    text-align: center;
 }
 
 .OrderBookHeader{
@@ -263,49 +264,49 @@
     border-bottom: 1px solid #263043;
     border-radius: 2px 3px 0 0;
     font-size: 12px;
-    font-weight: 500;
-    padding: 10px 15px 0px 15px;
+    font-weight: 700;
+    padding: 10px 15px 10px 15px;
 }
 
 .SVGIcon{
     width: 16px;
     height: 16px;
+    margin: 0;
+    padding: 0;
 }
 
-.OrderBookHeaderButton{
+.OrderBookHeaderButtons button{
     width: 24px;
     height: 24px;
-    padding-left: 5px;
+
     border-radius: 3px;
     background-image:none !important;
     background: #2c3445;
     fill: #fff;
     border: 0;
+    flex: 1;
+
     
 
 }
 
 .OrderBookHeaderButtons{
-    padding: 0 10px;
     align-content: center;
+    box-sizing: border-box;
+    display: flex;
 
 }
 
 .OrderBookLiBar{
     width: 100px; 
-    height: 5%;
+    height: inherit;
     background-color:rgba(255,75,75,0.2) ;
     position: absolute;
 }
 
 /* Style the tab */
 .tab button {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: transparent;
-    color: #fff;
-    border-radius: 3px;
-    padding: 0 10px;
+  
   }
   
 .ChartsHeader{
@@ -313,5 +314,43 @@
     justify-content: space-between;
     height: 40px;
     background-color: #263043;
+    
+}
+
+.CoinTabs{ 
+
+}
+
+.CoinTabsLink{
+    color: #ffffff;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: transparent !important;
+    border-radius: 3px;
+    padding: 0 10px;
+}
+
+
+.OrderBookLiPrice{
+    color: #ff4b4b;
+    
+}
+
+.OrderBookSeparator ul{
+    background-color: #1e2636 !important;
+    display: flex;
+    height: 24px;
+    justify-content: space-between;
+    padding: 10px 15px 0px 15px;
+    text-align: center;
+}
+
+.OrderBookSeparator ul li{
+    text-align: center;
+}
+.ScrollingOrders{
+    overflow-y: scroll;
+    position:relative;
+    height: 200px;
     
 }

@@ -8,7 +8,7 @@ class OrderBookLi extends Component {
         <li>
         <div>-</div>
         <div>25.00000</div>
-        <div> 0.05300</div>
+        <div className="OrderBookLiPrice"> 0.05300</div>
         </li>
       </div>
     );

@@ -6,12 +6,12 @@ class Charts extends Component {
     
     return (
       <div className="Charts">
-      <div className="ChartsHeader">
-      <div className="BlockTitle">Charts</div>
-      <div class="tab">
-  <button className="tablinks">Candle</button>
-  <button className="tablinks">Line</button>
-  <button className="tablinks">Depth</button>
+      <div className="OrderBookHeader">
+      <div >Charts</div>
+      <div class="CoinTabs">
+  <button className="CoinTabsLink">Candle</button>
+  <button className="CoinTabsLink">Line</button>
+  <button className="CoinTabsLink">Depth</button>
 </div></div>
        <TradingViewWidget 
        className="TradingViewWidget"

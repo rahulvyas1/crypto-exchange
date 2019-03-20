@@ -3,6 +3,8 @@ import '../App.css';
 import OrderBookLi from './OrderBookLi';
 import { ReactComponent as Plus } from '../assets/plus.svg';
 import { ReactComponent as Minus } from '../assets/minus.svg';
+import ScrollingOrders from './ScrollingOrders';
+import OrderBookSeparator from './OrderBookSeparator';
 class OrderBook extends Component {
   render() {
     return (
@@ -21,25 +23,9 @@ class OrderBook extends Component {
         <di>Price(BTC)</di>
         </div>
       <ul>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
+        <ScrollingOrders></ScrollingOrders>
+        <OrderBookSeparator></OrderBookSeparator>
+        <ScrollingOrders></ScrollingOrders>
       </ul>
       </div>
     );
