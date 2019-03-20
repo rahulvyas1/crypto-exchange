@@ -178,38 +178,59 @@
     font-weight: 300;
     padding: 20px;
     border: 1px solid #0e1018;
+    max-height: 0px;
 }
 
 .OrderBook ul{
     list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-content: stretch;
-    overflow:hidden; 
-    overflow-y:scroll;
+    background-color: #0dc3f9;
+    padding: 0; /* To remove default left padding */
+    width: 100%;
+    overflow-y: scroll;
+    position:relative;
+    height: 300px;
 }
- 
-.OrderBook ul li{
+
+.OrderBookLi{
     background-color: #263043;
+    margin: 0;
+    
+}
+
+.OrderBookLi li{
     display: flex;
-    justify-content: flex-end;
-    padding: 2px;
-    font-size: 0.7em;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.OrderBookLi li div{
+    flex: 0 0 auto;
+    
+}
+
+.ListHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.8em;
     font-weight: 700;
-}
 
-.OrderBook ul li div{
-    padding: 5px;
-    flex: 1;
 }
-
 .ListHeader div{
-    float: left;
-    width: 33.33%;
+
 }
 
-.ListHeader:after{
-    content: "";
-    display: table;
-    clear: both;
+.BlockTitle{
+    font-size: 1em;
+    font-weight: 300;
+    padding: 0 0 10px 0;
+}
+
+.OrderBookHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.SVGIcon{
+    width: 32px;
 }
