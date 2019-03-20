@@ -7,4 +7,4 @@ This repo is a Complete Digital Asset/ Crypto Exchange Frontend UI created in Re
 ---
 
 Update as of 21/March/2019
-[logo]: https://github.com/rahulvyas1/crypto-exchange/blob/master/src/assets/Exchange-Screenshot.png "React Crypto Exchange"
+![React Crypto Exchange](https://github.com/rahulvyas1/crypto-exchange/blob/master/src/assets/Exchange-Screenshot.png)
