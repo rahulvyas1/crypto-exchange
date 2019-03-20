@@ -9,14 +9,13 @@ class App extends Component {
     return (
       <div className="body">
       <Navbar></Navbar>
-      <div className="ContainerMain flex-container">
-      <div className="Container flex-container">
-      
+      <div className="ContainerMain">
+      <div className="Container Top">
       <Charts ></Charts>
-      <MyOrders></MyOrders>
-      </div>
-      <div className="Container">
       <Orders ></Orders>
+      </div>
+      <div className="Container Bottom">
+      <MyOrders></MyOrders>
       <BuySellSection></BuySellSection>
       </div>
       </div>

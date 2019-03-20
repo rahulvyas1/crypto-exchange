@@ -35,7 +35,7 @@
 .SubmitOrderButton{
     width: 100%;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
     color: #ffffff;
     height: 36px;
@@ -101,6 +101,7 @@
     color: azure;
     justify-content: space-between;
     height: 42px;
+    background-color: #1e2636;
 }
 
 .NavbarPart{
@@ -137,7 +138,8 @@
 .Logo{
     width: 28px;
     fill: white;
-    padding: 0 10px;
+    padding: 0 20px ;
+    padding-right: 40px;
 }
 
 .SubmitButton form button{
@@ -158,24 +160,35 @@
 
 .ContainerMain{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 .Container{
-    flex: 1;
     justify-content: space-between;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+.Container Top{
+    height: 58%;
+    
 }
 
 
 .OrdersSection{
-    height: 100%;
     background-color:#141721;
     display: flex;
+    width: 45%;
     
 }
 
 .Charts{
-    height: 100%;
+    width: 55%;
 }   
+
+.Charts TradingViewWidget{
+    padding: 10px;
+}
 
 .MyOrders{
     height: 100%;
@@ -185,11 +198,10 @@
 .OrderBook{
     color: #ffffff;
     width: 100%;
-    font-size: 1.8em;
+    font-size: 12px;
     font-weight: 300;
-    padding: 20px;
+    padding: 0px;
     border: 1px solid #0e1018;
-    max-height: 0px;
 }
 
 .OrderBook ul{
@@ -223,28 +235,60 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 0.8em;
-    font-weight: 700;
-
+    background-color: #1e2636 !important;
+    border-bottom: 1px solid #263043;
+    font-size: 10px;
+    font-weight: 500;
+    color: #818b9d;
+    padding: 4px 0;
+    
 }
 .ListHeader div{
-
+  padding: 0 10px;
 }
 
+
 .BlockTitle{
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 300;
-    padding: 0 0 10px 0;
+
 }
 
 .OrderBookHeader{
-    display: flex;
     justify-content: space-between;
+
+    color: #ffffff;
+    padding: 0 10px;
+    display: flex;
+    background-color: #1e2636 !important;
+ 
+    border-bottom: 1px solid #263043;
+    border-radius: 2px 3px 0 0;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px 15px 0px 15px;
 }
 
 .SVGIcon{
-    width: 32px;
+    width: 16px;
+    height: 16px;
+}
+
+.OrderBookHeaderButton{
+    width: 24px;
+    height: 24px;
+    padding-left: 5px;
+    border-radius: 3px;
+    background-image:none !important;
+    background: #2c3445;
+    fill: #fff;
+    border: 0;
+    
+
+}
+
+.OrderBookHeaderButtons{
+    padding: 0 10px;
+    align-content: center;
+
 }
 
 .OrderBookLiBar{
@@ -267,6 +311,7 @@
 .ChartsHeader{
     display: flex;
     justify-content: space-between;
-    height: 20px;
+    height: 40px;
+    background-color: #263043;
     
 }

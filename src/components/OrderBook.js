@@ -9,10 +9,10 @@ class OrderBook extends Component {
    
       <div className="OrderBook">
       <div className="OrderBookHeader">
-      <div className="BlockTitle Child"> Order Book</div>
+      <div className="BlockTitle"> Order Book</div>
       <div className="OrderBookHeaderButtons">
-      <button className="SVGIcon"><Plus></Plus></button>
-      <button className="SVGIcon"><Minus></Minus></button>
+      <button className="OrderBookHeaderButton"><Plus className="SVGIcon"></Plus></button>
+      <button className="OrderBookHeaderButton"><Minus className="SVGIcon"></Minus></button>
       </div>
       </div>
       <div className="ListHeader">
