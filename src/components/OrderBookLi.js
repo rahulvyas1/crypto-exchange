@@ -4,6 +4,7 @@ class OrderBookLi extends Component {
   render() {
     return (
       <div className="OrderBookLi">
+      <div className="OrderBookLiBar"></div>
         <li>
         <div>-</div>
         <div>25.00000</div>

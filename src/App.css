@@ -234,3 +234,10 @@
 .SVGIcon{
     width: 32px;
 }
+
+.OrderBookLiBar{
+    width: 100px; 
+    height: 5%;
+    background-color:rgba(255,75,75,0.2) ;
+    position: absolute;
+}
