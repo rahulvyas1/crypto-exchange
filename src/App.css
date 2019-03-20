@@ -214,7 +214,7 @@
 }
 
 .OrderBookLi{
-    background-color: #263043;
+    background: #141721;
     margin: 0;
     height: 15px;
     
@@ -340,8 +340,9 @@
     background-color: #1e2636 !important;
     display: flex;
     height: 24px;
+    width: inherit;
     justify-content: space-between;
-    padding: 10px 15px 0px 15px;
+    padding: 10px 0px 0px 15px;
     text-align: center;
 }
 

@@ -3,6 +3,7 @@ import '../App.css';
 import OrderBookLi from './OrderBookLi';
 import { ReactComponent as Plus } from '../assets/plus.svg';
 import { ReactComponent as Minus } from '../assets/minus.svg';
+import ScrollingOrders from './ScrollingOrders';
 class TradeHistory extends Component {
   render() {
     return (
@@ -21,25 +22,7 @@ class TradeHistory extends Component {
         <di>Price(BTC)</di>
         </div>
       <ul>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
-        <OrderBookLi></OrderBookLi>
+       <ScrollingOrders></ScrollingOrders>
       </ul>
       </div>
     );
