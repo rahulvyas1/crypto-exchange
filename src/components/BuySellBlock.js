@@ -8,8 +8,10 @@ class BuySellBlock extends Component {
     
     return (
       <div className="BuySellBlock">
+      <div className="OrderBookHeader">
       <div className="BuySellHeadingText"> Buy PLKX </div>
       <div> 999.99999 PLKX </div>
+      </div>
       <InputOrderBox></InputOrderBox>
       <div className="RadioButtonSelectorArea">
       <MiniRadioButtonSelector></MiniRadioButtonSelector>
@@ -17,7 +19,9 @@ class BuySellBlock extends Component {
       <MiniRadioButtonSelector></MiniRadioButtonSelector>
       <MiniRadioButtonSelector></MiniRadioButtonSelector>
       </div>
-      <div>Total: 200 ETH</div>
+      <div className="TotalAmountBar">
+        You will get:
+        <span>200 ETH</span></div>
       <ButtonOrderSubmit ></ButtonOrderSubmit>
       </div>
     );

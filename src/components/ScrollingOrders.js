@@ -22,6 +22,17 @@ class ScrollingOrders extends Component {
       <OrderBookLi></OrderBookLi>
       <OrderBookLi></OrderBookLi>
       <OrderBookLi></OrderBookLi>
+      <OrderBookLi></OrderBookLi>
+      <OrderBookLi></OrderBookLi>
+      <OrderBookLi></OrderBookLi>
+      <OrderBookLi></OrderBookLi>
+      <OrderBookLi></OrderBookLi>
+      <OrderBookLi></OrderBookLi>
+      <OrderBookLi></OrderBookLi>
+      <OrderBookLi></OrderBookLi>
+      <OrderBookLi></OrderBookLi>
+      <OrderBookLi></OrderBookLi>
+      <OrderBookLi></OrderBookLi>
       </div>
     );
   }

@@ -4,11 +4,10 @@ class MiniRadioButtonSelector extends Component {
   render() {
     return (
       <div className="MiniRadioButtonSelector">
-      <form>
         <button >
         25% 
         </button>
-      </form></div>
+        </div>
     );
   }
 }

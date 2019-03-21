@@ -2,7 +2,6 @@
    
     margin: 0;
     list-style: none;
-    width: 100%;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -14,6 +13,12 @@
     flex-direction: row;
     
 }
+.root{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 .BuySellHeadingText{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -22,9 +27,7 @@
 }
 
 .BuySellBlock{
-    flex: 1; 
     background: #212529;
-    padding: 20px;
     margin-top: 10px;
     color: white;
     font-weight: bold;
@@ -50,32 +53,62 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
 
 }
-.MiniRadioButtonSelector{
+.MiniRadioButtonSelector button{
    
-    flex:1;
-    flex-grow: 1;
-    padding: 0;
-    
     border: 1px solid #263043;
     background: transparent;
     border-radius: 3px;
-    font-size: 0.4vw;
-    font-weight: 500;
+    height: 22px;
+    font-size: 11px;
+    font-weight: 700;
     color: #858e9f;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 5px;
+    line-height: 1;
+    justify-content: center;
+    flex: 1;
     cursor: pointer;
+    width: 100%;
+    margin: 10px;
+
     
     
+}
+
+.InputBoxBox{
+    height: 40px;
+    border-radius: 3px;
+    background-color: #222a39;
+    margin-bottom: 15px;
 }
 
 .InputOrderBoxField{
     width: 100%;
-    line-height: 5em;
-    background-color: #232A38;
-    border-radius: 3px;
+    line-height: 2em;
+    background: transparent !important;
+    border: 0;
+    color: #fff;
+    padding: 0 10px;
+    font-weight: 700;
+}
+
+.InputBoxFieldLabel{
+    font-size: 10px;
+    color: #818b9d;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    /*width: calc(100% - 75px); */
+    width: 20%;
+
 }
 
 .body{
@@ -84,16 +117,13 @@
     -webkit-font-smoothing: antialiased;
     background-color: #101010;
     font-size: 0.6vw;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
 }
 
-
-.MiniRadioButtonSelector form button{
- width: 100%;
- flex-grow: 1;
- padding: 20px;
- 
- 
-}
 
 .Navbar{
     display: flex;
@@ -138,7 +168,7 @@
 .Logo{
     width: 28px;
     fill: white;
-    padding: 0 20px ;
+    padding: 0 20px;
     padding-right: 40px;
 }
 
@@ -161,29 +191,47 @@
 .ContainerMain{
     display: flex;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    margin: 0;
+    align-items: stretch;
+    justify-content: stretch;
+    
 }
 .Container{
     justify-content: space-between;
-    padding: 5px;
     display: flex;
     flex-direction: row;
     align-items: stretch;
+    flex-wrap: wrap;
+    width: 100%;
+   
 }
-.Container Top{
-    height: 58px;
+
+.ContainerTop{
+    height: 55vh;
+    padding-top: 2px;
+}
+.ContainerBottom{
+    min-height: 600px;
     
 }
+
 
 
 .OrdersSection{
     background-color:#141721;
     display: flex;
     width: 45%;
+    height: inherit;
     
 }
 
 .Charts{
     width: 55%;
+    background-color: #0dc3f9;
 }   
 
 .Charts TradingViewWidget{
@@ -191,7 +239,6 @@
 }
 
 .MyOrders{
-    height: 100%;
     background-color:#0e1018;
 } 
 
@@ -202,6 +249,7 @@
     color: #8d96a6;
     font-size: 11px;
     font-weight: 700;
+    height: 98%;
 }
 
 .OrderBook ul{
@@ -209,8 +257,12 @@
     background-color: #0dc3f9;
     padding: 0; /* To remove default left padding */
     width: 100%;
-
     margin: 0;
+    display: flex;
+    flex-flow: column;
+    height: 84%;
+    justify-content: flex-start;
+    overflow-y: scroll;
 }
 
 .OrderBookLi{
@@ -240,7 +292,8 @@
     font-size: 10px;
     font-weight: 500;
     color: #818b9d;
-    padding: 4px 0;
+    
+    line-height: 2em;
     
 }
 .ListHeader div{
@@ -304,10 +357,7 @@
     position: absolute;
 }
 
-/* Style the tab */
-.tab button {
-  
-  }
+
   
 .ChartsHeader{
     display: flex;
@@ -339,6 +389,7 @@
 .OrderBookSeparator ul{
     background-color: #1e2636 !important;
     display: flex;
+    flex-direction: row;
     height: 24px;
     width: inherit;
     justify-content: space-between;
@@ -352,6 +403,39 @@
 .ScrollingOrders{
     overflow-y: scroll;
     position:relative;
-    height: 200px;
     
 }
+
+.TotalAmountBar{
+    display: flex;
+    font-size: 12px;
+    font-weight: 700;
+    color: #858e9f;
+    margin: 8px 0;
+}
+
+.TotalAmountBar span{
+    color: #ffffff;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    body {
+      
+    }
+
+    .Container{
+        flex-direction: row;
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+    }
+
+    .Charts{
+        width: 100%;
+        height: 100%;
+    }
+    .OrdersSection{
+        width: 100%;
+    }
+  }

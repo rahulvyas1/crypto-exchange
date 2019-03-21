@@ -5,8 +5,8 @@ class InputOrderBox extends Component {
     return (
       <div>
       <form>
-      <div> PRICE </div>
-        <input type="number" step="0.0001" className="InputOrderBoxField"></input>
+      <div className="InputBoxBox"><div className="InputBoxFieldLabel"> PRICE </div>
+        <input type="number" step="0.0001" className="InputOrderBoxField" placeholder="0.0000"></input></div>
       </form>
       </div>
     );

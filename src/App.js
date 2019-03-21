@@ -10,14 +10,14 @@ class App extends Component {
       <div className="body">
       <Navbar></Navbar>
       <div className="ContainerMain">
-      <div className="Container Top">
+      <div className="Container ContainerTop">
       <Charts ></Charts>
       <Orders ></Orders>
       </div>
-      <div className="Container Bottom">
+      {/* <div className="Container ContainerBottom">
       <MyOrders></MyOrders>
       <BuySellSection></BuySellSection>
-      </div>
+      </div> */}
       </div>
       </div>
     );

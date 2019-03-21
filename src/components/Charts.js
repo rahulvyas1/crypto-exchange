@@ -13,13 +13,13 @@ class Charts extends Component {
   <button className="CoinTabsLink">Line</button>
   <button className="CoinTabsLink">Depth</button>
 </div></div>
-       <TradingViewWidget 
+       {/* <TradingViewWidget 
        className="TradingViewWidget"
     symbol="NASDAQ:AAPL"
     theme={Themes.DARK}
     locale="en"
     autosize
-  />
+  /> */}
       </div>
     );
   }
